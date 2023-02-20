@@ -1,0 +1,35 @@
+.aboutFeature {
+	display: flex;
+	flex-direction: column;
+}
+
+.iconBarWrapper {
+	display: flex;
+	align-items: center;
+}
+
+.iconBarWrapper > svg {
+	font-size: 30px;
+}
+
+.bar {
+	display: block;
+	background-color: #101010;
+	height: 1px;
+	width: 100%;
+	margin-left: 1rem;
+}
+
+.heading {
+	margin-bottom: 0;
+}
+
+.innerText {
+	font-size: 20px;
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+.para {
+	font-size: 14px;
+}

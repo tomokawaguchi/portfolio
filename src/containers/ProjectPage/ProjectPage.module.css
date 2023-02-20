@@ -1,0 +1,143 @@
+#main {
+	display: flex;
+	width: 100%;
+}
+
+.mainInner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1440px;
+	width: 100%;
+	padding: 0 6rem;
+	margin: 3rem 6rem;
+}
+
+.contentSec {
+	display: flex;
+	flex-direction: column;
+	max-width: 770px;
+}
+
+.contentSec > h1 {
+	font-size: 60px;
+	margin: 0;
+	margin-bottom: 50px;
+}
+
+/* Common stylings */
+.contentSec ul:not(.featuresList) {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.tagList {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 40px !important;
+}
+
+.tagList > li {
+	font-size: 14px;
+	border: 1px solid #101010;
+	border-radius: 100px;
+	padding: 5px 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.linksList {
+	margin-bottom: 40px !important;
+}
+
+.linksList > li {
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+	transition: all 0.4s ease-in-out;
+}
+
+.linksList > li > svg {
+	font-size: 24px;
+	margin-right: 20px;
+}
+.linksList > li > svg:nth-child(2) {
+	font-size: 20px;
+}
+
+.linksList > li > a {
+	text-decoration: none;
+	width: 80%;
+	transition: all 0.4s ease-in-out;
+	word-wrap: break-word;
+}
+
+.linksList > li > a:hover {
+	text-decoration: underline;
+}
+
+.para {
+	margin-bottom: 60px;
+}
+
+.featuresList > li {
+	margin-bottom: 15px;
+}
+
+.img {
+	width: 100%;
+	margin: 70px 0;
+}
+
+button {
+	width: fit-content !important;
+}
+
+/* Media query */
+@media only screen and (max-width: 1360px) {
+	.mainInner {
+		padding: 0 3rem;
+	}
+}
+@media only screen and (max-width: 1260px) {
+	.mainInner {
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 1140px) {
+	.contentSec {
+		max-width: 85%;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.contentSec {
+		max-width: 100%;
+	}
+	.contentSec > h1 {
+		font-size: 50px;
+	}
+}
+@media only screen and (max-width: 570px) {
+	.mainInner {
+		margin: 3rem;
+	}
+
+	.contentSec > h1 {
+		font-size: 43px;
+	}
+
+	.featuresList {
+		padding: 0;
+		padding-left: 20px;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.mainInner {
+		margin: 2rem;
+	}
+
+	.contentSec > h1 {
+		font-size: 36px;
+	}
+}

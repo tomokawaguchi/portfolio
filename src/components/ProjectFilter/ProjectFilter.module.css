@@ -1,0 +1,48 @@
+.projectList {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	border: 1px solid #101010;
+	border-radius: 10px;
+	max-width: 880px;
+	width: fit-content;
+	padding: 5px 10px;
+}
+
+.projectListButton {
+	border: none;
+	background-color: transparent;
+	border: 1px solid;
+	border-color: transparent;
+	border-radius: 100px;
+	padding: 10px 30px;
+	margin: 0 10px;
+}
+
+.projectListButton[data-active="true"] {
+	color: #f2f3eb;
+	border-color: #101010;
+	background-color: #101010;
+}
+
+/* Media query */
+@media only screen and (max-width: 945px) {
+	.projectList {
+		flex-wrap: wrap;
+		justify-content: center;
+		border-radius: 20px;
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.projectList {
+		width: 100%;
+		margin: 0;
+	}
+}
+@media only screen and (max-width: 620px) {
+	.projectList {
+		width: 100%;
+	}
+}

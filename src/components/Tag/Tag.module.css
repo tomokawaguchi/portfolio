@@ -1,0 +1,14 @@
+.tagWrapper {
+	display: inline-block;
+	border: 1px solid #101010;
+	border-radius: 100px;
+	padding: 0.5rem 1.2rem;
+}
+
+.tagText {
+	display: block;
+	font-size: 10px;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}

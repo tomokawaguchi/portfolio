@@ -1,0 +1,27 @@
+/* Global stylings */
+h1 {
+	font-size: 74px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 500;
+}
+
+h3 {
+	font-size: 22px;
+	font-weight: 400;
+}
+
+a {
+	font-size: 14px;
+	font-weight: 600;
+	color: #101010;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+}

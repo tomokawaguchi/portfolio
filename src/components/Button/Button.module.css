@@ -1,0 +1,57 @@
+.button {
+	display: inline-flex;
+	background-color: #101010;
+	border: solid 1px transparent;
+	border-radius: 100px;
+	padding: 1rem 3rem;
+	transition: all 0.4s ease-in-out;
+}
+
+.buttonInner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button a {
+	display: flex;
+	align-items: center;
+	color: #f2f3eb;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.button svg {
+	color: #f2f3eb;
+	font-size: 20px;
+	transition: all 0.2s ease-in-out;
+}
+
+.arrowRight svg {
+	padding-left: 20px;
+}
+
+.arrowLeft svg {
+	padding-right: 20px;
+}
+
+.button:hover {
+	border-color: #101010;
+	background-color: #f2f3eb;
+}
+
+.button:hover a {
+	color: #101010;
+}
+
+.button:hover svg {
+	color: #101010;
+}
+
+.button:hover .arrowRight svg {
+	transform: translateX(10px);
+}
+
+.button:hover .arrowLeft svg {
+	transform: translateX(-10px);
+}

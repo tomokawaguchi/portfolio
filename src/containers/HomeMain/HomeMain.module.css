@@ -1,0 +1,39 @@
+#main {
+	display: flex;
+	width: 100%;
+}
+
+.mainInner {
+	display: flex;
+	max-width: 1440px;
+	width: 100%;
+	padding: 0 6rem;
+	margin: 3rem 6rem;
+}
+
+/* Media Query */
+@media only screen and (max-width: 1360px) {
+	.mainInner {
+		padding: 0 3rem;
+	}
+}
+@media only screen and (max-width: 1260px) {
+	.mainInner {
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 1115px) {
+	.mainInner {
+		flex-direction: column;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.mainInner {
+		margin: 3rem;
+	}
+}
+@media only screen and (max-width: 410px) {
+	.mainInner {
+		margin: 2rem;
+	}
+}

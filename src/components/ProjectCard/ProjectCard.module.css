@@ -1,0 +1,102 @@
+.projectCard {
+	position: relative;
+	border-radius: 15px;
+	width: 100%;
+	min-height: 220px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+	transition: all 0.4s ease-in-out;
+	box-shadow: 0 0 7px 2px rgb(0 0 0 / 14%);
+}
+
+.projectCardLink {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+.projectCardLink > div:first-child {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.projectCardLink:after {
+	position: absolute;
+	content: "";
+	background-color: rgba(16, 16, 16, 0.6);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 15px;
+	z-index: -1;
+	transition: all 0.2s ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.projectCardLink:hover:after {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* For the tag */
+.projectCardLink > div:first-child {
+	display: block;
+	border-color: #fff;
+	transition: all 0.4s ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+}
+.projectCardLink:hover > div {
+	visibility: visible;
+	opacity: 1;
+}
+.projectCardLink span {
+	display: block;
+	color: #fff;
+	transition: all 0.4s ease-in-out;
+}
+
+/* For the project title and arrow */
+.titleArrowWrapper {
+	display: flex;
+	position: absolute;
+	justify-content: space-between;
+	align-items: center;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 30px;
+	transition: all 0.4s ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+}
+.title {
+	font-size: 18px;
+	color: #fff;
+	padding-right: 0.5rem;
+	margin: 0;
+	margin-left: 20px;
+	transition: all 0.4s ease-in-out;
+}
+.titleArrowWrapper > svg {
+	font-size: 25px;
+	margin-right: 20px;
+	color: #fff;
+	transition: all 0.4s ease-in-out;
+}
+.projectCardLink:hover .titleArrowWrapper {
+	visibility: visible;
+	opacity: 1;
+}
+
+@media only screen and (max-width: 700px) {
+	.projectCard {
+		max-width: 400px;
+		min-height: 300px;
+	}
+}

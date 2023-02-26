@@ -24,7 +24,10 @@ const ProjectsListPage = () => {
 			<div className={styles.mainInner}>
 				<section className={styles.introSec}>
 					<h1>All Projects</h1>
-					<p>Here you can brows all of my projects and works including both professional, _nology course and personal ones.</p>
+					<p>
+						Here you can browse all projects and works that I have worked on as a freelancer and through the _nology course. I have also tackled
+						diverse personal projects that have allowed me to sharpen my skills and grow as a software engineer.
+					</p>
 				</section>
 
 				<ProjectFilter handleClick={handleClick} />

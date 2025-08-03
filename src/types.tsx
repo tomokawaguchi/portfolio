@@ -1,46 +1,48 @@
+import { ReactElement } from "react";
+
 export interface defaultProject {
-	id: number;
-	title: string;
-	projectType: string;
-	techStack: string[];
-	github: string;
-	liveSite: string;
-	content: string;
-	features: string[];
-	image: string;
-	isFeatured: boolean;
+  id: number;
+  title: string;
+  projectType: string;
+  techStack: string[];
+  github: string;
+  liveSite: string;
+  content: string;
+  features: string[];
+  image: string;
+  isFeatured: boolean;
 }
 
 export interface ProjectCardProps {
-	data: defaultProject;
+  data: defaultProject;
 }
 
 export interface NavProps {
-	navFor: string;
-	isDesktop: boolean;
-	isMobileActive: boolean;
-	handleClick?: () => void;
+  navFor: string;
+  isDesktop: boolean;
+  isMobileActive: boolean;
+  handleClick?: () => void;
 }
 
-export interface ButtonProps {
-	buttonType?: string;
-	buttonText: string;
-	linkTo?: string;
+export interface LinkButtonProps {
+  buttonType: "arrow-right" | "arrow-left";
+  buttonText: string;
+  linkTo?: string;
 }
 
 export interface AboutFeatureProps {
-	iconType: string;
-	headingNumber: string;
-	headingUnit: string;
-	paraText: string;
+  icon: ReactElement;
+  title: string;
+  content: string;
 }
 
 export interface SocialsProps {
-	socialsFor: string;
-	isDesktop: boolean;
-	isMobileActive: boolean;
+  socialsFor: string;
+  isDesktop: boolean;
+  isMobileActive: boolean;
 }
 
 export interface TagProps {
-	tagText: string;
+  tagText: string;
+  addSrOnlyText?: boolean;
 }

@@ -1,4 +1,4 @@
-#main {
+.main {
 	display: flex;
 	justify-content: center;
 	width: 100%;
@@ -9,7 +9,7 @@
 	max-width: 1440px;
 	width: 100%;
 	padding: 0 6rem;
-	margin: 3rem 6rem;
+	margin: 2rem 6rem;
 }
 
 /* Media Query */

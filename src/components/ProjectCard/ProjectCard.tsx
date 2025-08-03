@@ -5,17 +5,19 @@ import { ProjectCardProps } from "../../types";
 import { Link } from "react-router-dom";
 
 const ProjectCard = (data: ProjectCardProps) => {
-	return (
-		<article className={styles.projectCard} style={{ backgroundImage: `url(../${data.data.image})` }}>
-			<Link to={`/projects/${data.data.id}`} className={styles.projectCardLink}>
-				<Tag tagText={data.data.projectType} />
-				<div className={styles.titleArrowWrapper}>
-					<h3 className={styles.title}>{data.data.title}</h3>
-					<BsArrowRightCircle />
-				</div>
-			</Link>
-		</article>
-	);
+  const { id, image, title, projectType } = data.data;
+  return (
+    <article className={styles.projectCard}>
+      <Link to={`/projects/${id}`} className={styles.projectCardLink} aria-label={`View details for ${title} project`}>
+        <img src={`../${image}`} alt={`${title} project thumbnail`} className={styles.projectThumbnail} />
+        <Tag tagText={projectType} />
+        <div className={styles.titleArrowWrapper}>
+          <h3 className={styles.title}>{title}</h3>
+          <BsArrowRightCircle aria-hidden="true" />
+        </div>
+      </Link>
+    </article>
+  );
 };
 
 export default ProjectCard;

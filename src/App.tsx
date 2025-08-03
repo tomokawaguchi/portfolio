@@ -6,18 +6,21 @@ import HomeMain from "./containers/HomeMain/HomeMain";
 import ProjectPage from "./containers/ProjectPage/ProjectPage";
 
 const App = () => {
-	return (
-		<BrowserRouter>
-			<div className="App">
-				<Header />
-				<Routes>
-					<Route path="/" element={<HomeMain />} />
-					<Route path="/projects" element={<ProjectsListPage />} />
-					<Route path="/projects/:id" element={<ProjectPage />} />
-				</Routes>
-			</div>
-		</BrowserRouter>
-	);
+  return (
+    <BrowserRouter>
+      <a href="#main" className="skip-link">
+        Skip to main content
+      </a>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomeMain />} />
+          <Route path="/projects" element={<ProjectsListPage />} />
+          <Route path="/projects/:id" element={<ProjectPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
 };
 
 export default App;

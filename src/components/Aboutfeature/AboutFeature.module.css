@@ -3,6 +3,12 @@
 	flex-direction: column;
 }
 
+.aboutFeatureContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .iconBarWrapper {
 	display: flex;
 	align-items: center;
@@ -21,7 +27,8 @@
 }
 
 .heading {
-	margin-bottom: 0;
+	margin: 0.5rem 0;
+  font-size: 1.2rem;
 }
 
 .innerText {

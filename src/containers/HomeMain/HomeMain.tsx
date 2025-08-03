@@ -3,14 +3,14 @@ import FeaturedProjectsSection from "../FeaturedProjectsSection/FeaturedProjects
 import styles from "./HomeMain.module.css";
 
 const HomeMain = () => {
-	return (
-		<main id={styles.main}>
-			<div className={styles.mainInner}>
-				<AboutSection />
-				<FeaturedProjectsSection />
-			</div>
-		</main>
-	);
+  return (
+    <main id="main" className={styles.main}>
+      <div className={styles.mainInner}>
+        <AboutSection />
+        <FeaturedProjectsSection />
+      </div>
+    </main>
+  );
 };
 
 export default HomeMain;
